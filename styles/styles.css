@@ -66,9 +66,6 @@ body{
 
 #reserveButton {
     height: 45px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 .opacity {
@@ -81,16 +78,13 @@ body{
     height: 300px;
 }
 
-
-/* #smoking {
-    list-style: none;
-} */
-#noSmoking, #Smoking {
-    visibility:hidden;
+.btn {
+    height: 40px;
 }
 
-#noSmoking {
-    visibility:hidden;
-
-
+#carouselButton {
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
 }

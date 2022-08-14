@@ -111,8 +111,7 @@
                 </div>
 
                 
-                <!-- Week 3 Assignement -->
-
+        <!-- Week 3 Assignement -->
 
         <div id="reserve" class="modal fade" role="dialog" style="color:black;">
             <div class="modal-dialog modal-lg" role="content">
@@ -130,48 +129,30 @@
                                 <div class="form-group col-sm-2">
                                     <label>Number of guests</label>
                                 </div>
-                                <div class="form-group col-sm-1">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" 
-                                            name="flexRadioDefault" id="onePerson">
-                                        <label class="form-check-label" for="onePerson">1</label>
-                                    </div>
-                                </div>
-                                <div class="form-group col-sm-1">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" 
-                                            name="flexRadioDefault" id="twoPersons">
-                                        <label class="form-check-label" for="twoPersons">2</label>
-                                    </div>
-                                </div>
-                                <div class="form-group col-sm-1">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" 
-                                            name="flexRadioDefault" id="threePersons">
-                                        <label class="form-check-label" for="threePersons">3</label>
-                                    </div>
-                                </div>
-                                <div class="form-group col-sm-1">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" 
-                                            name="flexRadioDefault" id="fourPersons">
-                                        <label class="form-check-label" for="fourPersons">4</label>
-                                    </div>
-                                </div>
-                                <div class="form-group col-sm-1">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" 
-                                            name="flexRadioDefault" id="fivePersons">
-                                        <label class="form-check-label" for="fivePersons">5</label>
-                                    </div>
-                                </div>
-                                <div class="form-group col-sm-1">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" 
-                                            name="flexRadioDefault" id="sixPersons">
-                                        <label class="form-check-label" for="sixPersons">6</label>
-                                    </div>
-                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">1</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">2</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">3</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                                    <label class="form-check-label" for="inlineRadio4">4</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+                                    <label class="form-check-label" for="inlineRadio5">5</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
+                                    <label class="form-check-label" for="inlineRadio6">6</label>
+                                  </div>
                             </div>
 
                             <!-- Second row -->
@@ -189,27 +170,27 @@
                                     
                                   </div>
                             </div>
-<!-- 
+
+                            <!-- Third row -->
                             <div class="form-row">
-                                <div class="form-group col-sm-4">
-                                    <label class="sr-only" for="InputEmail">Email address</label>
-                                    <input type="email" class="form-control form-control-sm mr-1" id="InputEmail" placeholder="Enter email">
+                                <div class="form-group col-sm-2">
+                                    <label>Date and Time</label>
                                 </div>
-                                <div class="form-group col-sm-4">
-                                    <label class="sr-only" for="InputPassword">Password</label>
-                                    <input type="password" class="form-control form-control-sm mr-1" id="InputPassword" placeholder="Password">
+                                <div class="fom-group col-sm-4" >
+                                    <input type="text" class="form-control" id="date" placeholder="Date">
                                 </div>
-                                <div class="col-sm-auto">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox">
-                                        <label class="form-check-label"> Remember me </label>
-                                    </div>
+                                <div class="fom-group col-sm-4">
+                                    <input type="text" class="form-control" id="time" placeholder="Time">
                                 </div>
                             </div>
+
+                            <!-- Fourth row -->
                             <div class="form-row">
-                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
-                            </div> -->
+                                <div class="col-sm-2"></div>
+                                <button class="btn btn-secondary " type="cancel">Cancel</button>
+                                <button class="btn btn-primary" type="submit">Submit</button>    
+                            </div>
+
                         </form>
                     </div>
                 </div>
@@ -277,7 +258,17 @@
                         <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                             <span class="carousel-control-next-icon"></span>
                         </a>
+                        
+
                     </ol>
+                    <div class="btn-group" id="carouselButton">
+                        <button class="btn btn-danger btn-small" id="carousel-pause">
+                            <span class="fa fa-pause"></span>
+                        </button>
+                        <button class="btn btn-danger btn-small" id="carousel-play">
+                            <span class="fa fa-play"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -511,16 +502,17 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-                
-<!-- 
     <script>
         $(document).ready(function() {
-            $('[data-toggle="tooltip"]').tooltip();
-        })
-
-    </script> -->
+            $('#mycarousel').carousel({interval: 2000});
+            $('#carousel-pause').click(function() {
+                $('#mycarousel').carousel('pause');
+            });
+            $('#carousel-play').click(function() {
+                $('#mycarousel').carousel('cycle');
+            });
+        });
+    </script>
     <script>
         $('#myModal').modal('show');
 
