@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/js/bootstrap.min.js">    
+    <link rel="stylesheet" href="node_modules/jquery/dist/jquery.min.js">    
     <title>Ristorante Con Fusion: About Us</title>
 
 </head>
@@ -88,6 +89,10 @@
 
         <div>&nbsp;</div>
         <div>&nbsp;</div>
+
+        
+
+
         <div class="container">
             <div class="row row-header">
                 <div class="col-12 col-sm-6 justify-content-center align-items-center">
@@ -97,13 +102,134 @@
                 <div class="col-12 col-sm-3">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
-                <div class="col-12 col-sm-3 text-center align-self-center">
+
+                <div class="col-12 col-sm-3 my-auto">
+                <!-- Button trigger modal -->
+                    <button type="button" id="reserveButton" class="btn btn-warning " data-toggle="modal" data-target="#reserve">
+                        Launch demo modal
+                    </button>
+                </div>
+
+                
+                <!-- Week 3 Assignement -->
+
+
+        <div id="reserve" class="modal fade" role="dialog" style="color:black;">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Reserve a Table</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                            &times;
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <!-- First row -->
+                            <div class="form-row">
+                                <div class="form-group col-sm-2">
+                                    <label>Number of guests</label>
+                                </div>
+                                <div class="form-group col-sm-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" 
+                                            name="flexRadioDefault" id="onePerson">
+                                        <label class="form-check-label" for="onePerson">1</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" 
+                                            name="flexRadioDefault" id="twoPersons">
+                                        <label class="form-check-label" for="twoPersons">2</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" 
+                                            name="flexRadioDefault" id="threePersons">
+                                        <label class="form-check-label" for="threePersons">3</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" 
+                                            name="flexRadioDefault" id="fourPersons">
+                                        <label class="form-check-label" for="fourPersons">4</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" 
+                                            name="flexRadioDefault" id="fivePersons">
+                                        <label class="form-check-label" for="fivePersons">5</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" 
+                                            name="flexRadioDefault" id="sixPersons">
+                                        <label class="form-check-label" for="sixPersons">6</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Second row -->
+                            <div class="form-row">
+                                <div class="form-group col-sm-2">
+                                    <label>Section</label>
+                                </div>
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-success btn-secondary">
+                                        <input type="radio" name="options" id="section1" autocomplete="off"> Non Smoking
+                                      </label>
+                                    <label class="btn btn-danger btn-secondary active">
+                                      <input type="radio" name="options" id="section2" autocomplete="off"> Smoking
+                                    </label>
+                                    
+                                  </div>
+                            </div>
+<!-- 
+                            <div class="form-row">
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="InputEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="InputEmail" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="InputPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm mr-1" id="InputPassword" placeholder="Password">
+                                </div>
+                                <div class="col-sm-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- End of Week 3 -->
+
+
+
+                <!-- Modal -->
+
+                <!-- <div class="col-12 col-sm-3 text-center align-self-center">
                     <a role="button" class="btn btn-block nav-link btn-warning"
                         data-toggle="tooltip" data-html="true" 
                         title="Or Call us at <br><strong>+852 12345678</strong>"
                         data-placement="bottom" href="#reserveCard">Reserve Table</a>
-                    <!-- <a class="btn btn-warning mr-auto " style="width:100%"  href="#reserveCard">Reserve a table</a> -->
-                </div>
+                </div> -->
             </div>
         </div>
     </header>
@@ -385,15 +511,23 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+                
+<!-- 
     <script>
         $(document).ready(function() {
             $('[data-toggle="tooltip"]').tooltip();
         })
 
+    </script> -->
+    <script>
+        $('#myModal').modal('show');
 
+        $('input[type=radio]').click(function() {
+        alert($(this).val());
+        });
     </script>
-    
 </body>
 
 </html>
