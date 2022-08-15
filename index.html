@@ -7,9 +7,6 @@
     <meta http-equiv="x-ua-compatible"  content="ie-edge">
 
     <!-- JQuery -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
@@ -38,8 +35,7 @@
                 </ul>      
                 
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
-                    <span class="fa fa-sign-in"></span> Login </a>
+                    <a id="login"><span class="fa fa-sign-in"></span> Login </a>
                 </span>
             </div>
         </div>
@@ -105,13 +101,13 @@
 
                 <div class="col-12 col-sm-3 my-auto">
                 <!-- Button trigger modal -->
-                    <button type="button" id="reserveButton" class="btn btn-warning " data-toggle="modal" data-target="#reserve">
-                        Launch demo modal
+                    <button type="button" id="reserveButton" class="btn btn-warning ">
+                        Reserve a Table
                     </button>
                 </div>
 
                 
-        <!-- Week 3 Assignement -->
+        <!-- Week 3 / Week 4 Assignement -->
 
         <div id="reserve" class="modal fade" role="dialog" style="color:black;">
             <div class="modal-dialog modal-lg" role="content">
@@ -201,16 +197,6 @@
 
         <!-- End of Week 3 -->
 
-
-
-                <!-- Modal -->
-
-                <!-- <div class="col-12 col-sm-3 text-center align-self-center">
-                    <a role="button" class="btn btn-block nav-link btn-warning"
-                        data-toggle="tooltip" data-html="true" 
-                        title="Or Call us at <br><strong>+852 12345678</strong>"
-                        data-placement="bottom" href="#reserveCard">Reserve Table</a>
-                </div> -->
             </div>
         </div>
     </header>
@@ -334,8 +320,6 @@
         <div class="row">
             <div class="col-12 col-sm-12">
                 <h2>Corporate Leadership</h2>
-                <!-- <img class="d-flex mr-3 img-thumbnail align-self-center"
-                    src="img" -->
                 <div class="media">
                     <div class="media-body">
                         <h3>Peter Pan <small>Chief Epicurious Officer</small></h3>
@@ -497,8 +481,24 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Week 4 script -->
     <script>
-        $(document).ready(function() {
+        $(document).ready(function() {            
+            // Button / Link function
+            $(function() {
+                // Button
+                $("#reserveButton").click(function() {
+                    $("#reserve").modal('show');
+                });
+                // Link2
+                $("#login").click(function() {
+                    $("#loginModal").modal('show');
+                });
+                
+            })
+            
+            // Carousel functions:
             $('#mycarousel').carousel({interval: 2000});
             $('#carouselButton').click(function() {
                 if ($('#carouselButton').children('span').hasClass('fa-pause')) {
@@ -514,13 +514,7 @@
             });
         });
     </script>
-    <script>
-        $('#myModal').modal('show');
 
-        $('input[type=radio]').click(function() {
-        alert($(this).val());
-        });
-    </script>
 </body>
 
 </html>
